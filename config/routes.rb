@@ -1,4 +1,8 @@
 Project2::Application.routes.draw do
+  root 'pages#about'
+  match '/blog', to: 'pages#blog', via: 'get'
+  match '/faq', to: 'pages#blog', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
